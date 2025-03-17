@@ -1,0 +1,54 @@
+
+
+
+
+ .button1{
+
+ 
+
+        position: absolute;
+        height: 150px;
+        width: 300px;
+        margin-right: 50%;
+        margin-left: 50%;
+        background-color: skyblue;
+
+
+
+}
+
+.button2 {
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    left: 300px;
+    margin-right: 50%;
+    margin-left: 50%;
+    background-color: skyblue;
+
+}
+
+.button3 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 175px;
+    margin-right: 50%;
+    margin-left: 50%;
+    background-color: white;
+    border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
