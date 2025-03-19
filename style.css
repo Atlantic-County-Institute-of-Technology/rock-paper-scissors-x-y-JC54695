@@ -1,3 +1,6 @@
+
+
+
 .interFace {
     display: flex;
     justify-content: center;
@@ -17,14 +20,7 @@
 }
 
 
-
-
-   
-
-
-
-
-#button1 {
+#you {
     position: absolute;
     height: 150px;
     width: 300px;
@@ -41,13 +37,119 @@
     text-align: center;
 }
 
-#button2 {
+#pc {
     position: absolute;
     height: 150px;
     width: 300px;
     left: 700px;
     background-color: skyblue;
     text-align: center;
+}
+
+
+.input_buttons {
+    position: absolute;
+    margin: auto;
+    width: 1200px;
+    height: 170px;
+    bottom: 500px;
+    border: 3px solid red;
+    
+}
+
+.button {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    margin-right: 50%;
+    margin-left: 50%;
+    border-radius: 50%;
+    border-width: 0px;
+    background-color: red;
+    box-shadow: 0px 20px 0px 0px gray;
+}
+
+#button1{
+    position: absolute;
+    right: 325px;
+}
+
+#button2 {
+    position: absolute;
+    background-color: blue;
+    right: 125px;
+    
+}
+
+#button3 {
+    position: absolute;
+    background-color: green;
+    left:  -75px;
+}
+
+#button4 {
+    position: absolute;
+    background-color: orange;
+    left: 125px;
+}
+
+#button5 {
+    position: absolute;
+    background-color: yellow;
+    left: 325px;
+}
+.button:active{
+    animation: pressAnimation .85ms;
+    transform: translateY(5px);
+    box-shadow: 0 15px 0 0 gray;
+} 
+
+.outputs {
+    position: absolute;
+    margin: auto;
+    width: 1200px;
+    height: 200px;
+    bottom: 250px;
+    left: 357px;
+    border: 3px solid orange;
+    
+}
+
+#yopt {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    left: 200px;
+    top: -23px;
+    border: 3px solid black;
+    text-align: center;
+    
+
+}
+
+#copt {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    left: 700px;
+    top: -23px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.extras {
+    position: absolute;
+    margin: auto;
+    width: 1200px;
+    height: 150px;
+    bottom: 75px;
+    left: 357px;
+    border: 3px solid yellow;
+}
+
+#reset {
+    position: absolute;
+    right: 510px;
 }
 
 
