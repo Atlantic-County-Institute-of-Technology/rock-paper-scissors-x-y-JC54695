@@ -152,6 +152,38 @@
     right: 510px;
 }
 
+#pScore {
+    position: absolute;
+    text-align: center;
+    left: 325px;
+    bottom: 43px;
+}
+
+#cScore {
+    position: absolute;
+    text-align: center;
+    left: 750px;
+    bottom: 43px;
+}
+
+#player_score {
+    position: absolute;
+    left: 380px;
+    bottom: 30px;
+}
+
+#computer_score {
+    position: absolute;
+    left: 840px;
+    bottom: 30px;
+}
+
+
+
+
+
+
+
 
 
 
