@@ -69,31 +69,31 @@
     box-shadow: 0px 20px 0px 0px gray;
 }
 
-#button1{
+#rock{
     position: absolute;
     right: 325px;
 }
 
-#button2 {
+#paper {
     position: absolute;
     background-color: blue;
     right: 125px;
     
 }
 
-#button3 {
+#scissors {
     position: absolute;
     background-color: green;
     left:  -75px;
 }
 
-#button4 {
+#stapler {
     position: absolute;
     background-color: orange;
     left: 125px;
 }
 
-#button5 {
+#fireEXT {
     position: absolute;
     background-color: yellow;
     left: 325px;
