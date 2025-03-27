@@ -1,181 +1,51 @@
+/* This code styles all of my elements...duh*/
 
 
 
-.interFace {
+body{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 885px;
-    border: 3px solid green;
-}
-
-.names {
-    position: absolute;
-    margin: auto;
-    width: 1200px;
-    height: 170px;
-    bottom: 700px;
-    border: 3px solid blue;
-    
-}
-
-
-#you {
-    position: absolute;
-    height: 150px;
-    width: 300px;
-    left: 200px;
-    background-color: skyblue;
-    text-align: center;
-}
-
-#vs {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    left: 575px;
-    text-align: center;
-}
-
-#pc {
-    position: absolute;
-    height: 150px;
-    width: 300px;
-    left: 700px;
-    background-color: skyblue;
-    text-align: center;
-}
-
-
-.input_buttons {
-    position: absolute;
-    margin: auto;
-    width: 1200px;
-    height: 170px;
-    bottom: 500px;
-    border: 3px solid red;
-    
-}
-
-.button {
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    margin-right: 50%;
-    margin-left: 50%;
-    border-radius: 50%;
-    border-width: 0px;
-    background-color: red;
-    box-shadow: 0px 20px 0px 0px gray;
-}
-
-#rock{
-    position: absolute;
-    right: 325px;
-}
-
-#paper {
-    position: absolute;
     background-color: blue;
-    right: 125px;
-    
 }
-
-#scissors {
-    position: absolute;
-    background-color: green;
-    left:  -75px;
+h1{
+    font-size: 3.5em;
+    color: hsl(0, 0%, 20%);
 }
-
-#stapler {
-    position: absolute;
-    background-color: orange;
-    left: 125px;
+.choices{
+    margin-bottom: 30px;
 }
-
-#fireEXT {
-    position: absolute;
-    background-color: yellow;
-    left: 325px;
+.choices button{
+    font-size: 7.5rem;
+    min-width: 160px;
+    margin: 0 10px;
+    border-radius: 250px;
+    background-color: red;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
 }
-.button:active{
-    animation: pressAnimation .85ms;
-    transform: translateY(5px);
-    box-shadow: 0 15px 0 0 gray;
-} 
-
-.outputs {
-    position: absolute;
-    margin: auto;
-    width: 1200px;
-    height: 200px;
-    bottom: 250px;
-    left: 357px;
-    border: 3px solid orange;
-    
+.choices button:hover{
+    background-color: white;
+    flex-direction: column;
 }
-
-#yopt {
-    position: absolute;
-    height: 200px;
-    width: 300px;
-    left: 200px;
-    top: -23px;
-    border: 3px solid black;
-    text-align: center;
-    
-
+#playerDisplay, #computerDisplay{
+    font-size: 2.5rem;
 }
-
-#copt {
-    position: absolute;
-    height: 200px;
-    width: 300px;
-    left: 700px;
-    top: -23px;
-    border: 3px solid black;
-    text-align: center;
+#resultDisplay{
+    font-size: 5rem;
+    margin: 30px 0;
 }
-
-.extras {
-    position: absolute;
-    margin: auto;
-    width: 1200px;
-    height: 150px;
-    bottom: 75px;
-    left: 357px;
-    border: 3px solid yellow;
+.scoreDisplay{
+    font-display: 2rem;
 }
-
-#reset {
-    position: absolute;
-    right: 510px;
+.greenText, #playerScoreDisplay{
+    color: lawngreen;
 }
-
-#pScore {
-    position: absolute;
-    text-align: center;
-    left: 325px;
-    bottom: 43px;
-}
-
-#cScore {
-    position: absolute;
-    text-align: center;
-    left: 750px;
-    bottom: 43px;
-}
-
-#player_score {
-    position: absolute;
-    left: 380px;
-    bottom: 30px;
-}
-
-#computer_score {
-    position: absolute;
-    left: 840px;
-    bottom: 30px;
+.redText, #computerScoreDisplay{
+    color: red;
 }
 
 

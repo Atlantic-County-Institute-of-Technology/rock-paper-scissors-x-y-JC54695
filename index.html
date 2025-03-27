@@ -1,47 +1,49 @@
+<!-- Jayden Clisham 3.18.25-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors-X-Y</title>
     <link rel="stylesheet" href="style.css">
-    <title>Rock-Paper-Scissors!</title>
 </head>
 <body>
-<div class="interFace">
-    <div class="names">
-        <h1 class="name" id="you"><p style="color: white; font-size: 50px";> You!</p> </h1>
-        <h1 id="vs"><p style="color: black; font-size: 50px";> vs.</p> </h1>
-        <h1 class="name" id="pc"><p style="color: white; font-size: 50px";> Computer!</p> </h1>
-    </div>
-    <div class="input_buttons">
-        <button class="button" id="rock"><img src="assets/rocks.png" alt="rocks!" width="140px" height="100px"> </button>
-        <button class="button" id="paper"><img src="assets/paper.png" alt="paper!" width="75px" height="100px"> </button>
-        <button class="button" id="scissors"><img src="assets/scissors.png" alt="scissors!" width="75px" height="100px"> </button>
-        <button class="button" id="stapler"><img src="assets/stapler.png" alt="stapler!" width="100px" height="75px"> </button>
-        <button class="button" id="fireEXT"><img src="assets/fireEXT.png" alt="fireEXT!" width="75px" height="100px"> </button>
-    </div>
-    <div class="outputs">
-        <h1 class="output" id="yopt"> <p style="color: black; font-size: 25px";> You Chose!</p></h1>
-        <h1 class="output" id="copt">  <p style="color: black; font-size: 25px";> Computer Chose!</p></h1>
-    </div>
-    <div class="extras">
-        <button id="reset"><p style="color: black; font-size: 25px";> RESET GAME</p> </button>
-        <h1 class="text1" id="pScore"> <p style="color: black; font-size: 25px";> Your Score!</p></h1>
-        <h1 class="text1" id="cScore"> <p style="color: black; font-size: 25px";> Computer's Score!</p></h1>
-        <p class="text2" id="player_score">0</p>
-        <p class="text3" id="computer_score">0</p>
-    </div>
-    <div class="result"></div>
-   
- 
 
- 
-    
+<!-- This code is for my buttons, The onclick property is used for JS -->
 
-
-
-
+<h1>Rock - Paper - Scissors-X-Y</h1>
+<div class="choices">
+    <button  onclick="playGame('rock')">👊</button>
+    <button  onclick="playGame('paper')">🤚</button>
+    <button  onclick="playGame('scissors')">✂️</button>
+    <button id="stapler" onclick="playGame('stapler')"><img src="assets/stapler.png" alt="stapler!" width="180px" height="100px"  ></button>
+    <button onclick="playGame('fireEXT')"><img src="assets/fireEXT.png" alt="fireEXT" height="145px"></button>
 </div>
+
+<!-- The rest of the code makes all of the interface for the game -->
+<div id="playerDisplay">PLAYER:</div>
+<div id="computerDisplay">COMPUTER:</div>
+<div id="resultDisplay"></div>
+
+<div class="scoreDisplay">Player Score:
+    <span id="playerScoreDisplay">0</span>
+</div>
+
+<div class="scoreDisplay">Computer Score:
+    <span id="computerScoreDisplay">0</span>
+</div>
+<div><button id="Reset">Reset</button></div>
+<p> Rock BEATS Scissors and Stapler </p>
+<p> Paper BEATS Rock and fireEXT </p>
+<p> Scissors BEATS Paper and fireEXT </p>
+<p> Stapler BEATS Paper and Scissors </p>
+<p> Stapler BEATS fireEXT and Rock </p>
+</p>
+
+
+
+<script src="script.js" ></script>
+
 </body>
-<script src="script.js"></script>
 </html>
