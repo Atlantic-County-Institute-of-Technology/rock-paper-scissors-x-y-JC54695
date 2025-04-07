@@ -2,7 +2,7 @@
 // description: JS file for rock, paper, scissors, x, y
 // author: jclisham
 // created: 3.24.25
-// last update: 4.02.25
+// last update: 4.03.25
 
 // html elements
 const choices = ['rock', 'paper', 'scissors','fireEXT','stapler'];
@@ -25,7 +25,6 @@ function playGame(playerChoice){
     let result = "";
 
 // Chooses who wins by comparing the player and computer choices
-
 // if player choice is equal to computer choice the result is a tie
     if(playerChoice === computerChoice){
         result = "IT'S A TIE!"
@@ -66,15 +65,18 @@ function playGame(playerChoice){
             }
     }
 
-/* The rest of the code is for displaying the winner and ticking up one of the scores depending on who wins */
 
+// makes the player and computer display equal to the player and computer choice
     playerDisplay.textContent = `PLAYER: ${playerChoice}`;
     computerDisplay.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 
+// for the red and green text when you win or lose 
 resultDisplay.classList.remove("greenText", "redText");
 
-    switch(result){
+
+// gives the result of the game and adds score depending on winner
+switch(result){
 case "YOU WIN!":
 resultDisplay.classList.add("greenText");
 playerScore++;
@@ -86,12 +88,16 @@ computerScore++;
 computerScoreDisplay.textContent = computerScore;
 break;
     }
+
+// resets the game and all other values when the reset button is clicked 
 function resetGame(){
     playerScore = 0;
     computerScore = 0;
     playerScoreDisplay.textContent = 0;
     computerScoreDisplay.textContent=0;
 }
+
+// event listener for the reset game button
 resetButton.addEventListener("click", resetGame)
 }
 
