@@ -20,6 +20,7 @@ let computerScore = 0;
 // function for the player choice and computer choice
 function playGame(playerChoice){
 
+
     const computerChoice = choices[Math.floor(Math.random() * 5)];
 // the result variable is declared to show the winner/loser
     let result = "";
@@ -65,36 +66,41 @@ function playGame(playerChoice){
             }
     }
 
-
 // makes the player and computer display equal to the player and computer choice
+
     playerDisplay.textContent = `PLAYER: ${playerChoice}`;
+setTimeout (() => {
     computerDisplay.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 
-// for the red and green text when you win or lose 
-resultDisplay.classList.remove("greenText", "redText");
+
+    // for the red and green text when you win or lose 
+    resultDisplay.classList.remove("greenText", "redText");
 
 
-// gives the result of the game and adds score depending on winner
-switch(result){
-case "YOU WIN!":
-resultDisplay.classList.add("greenText");
-playerScore++;
-playerScoreDisplay.textContent = playerScore;
-break;
-case "YOU LOSE!":
-resultDisplay.classList.add("redText");
-computerScore++;
-computerScoreDisplay.textContent = computerScore;
-break;
-    }
-
+    // gives the result of the game and adds score depending on winner
+    switch(result){
+    case "YOU WIN!":
+    resultDisplay.classList.add("greenText");
+    playerScore++;
+    playerScoreDisplay.textContent = playerScore;
+    break;
+    case "YOU LOSE!":
+    resultDisplay.classList.add("redText");
+    computerScore++;
+    computerScoreDisplay.textContent = computerScore;
+    break;
+        }
+}, 1000);
 // resets the game and all other values when the reset button is clicked 
 function resetGame(){
     playerScore = 0;
     computerScore = 0;
     playerScoreDisplay.textContent = 0;
-    computerScoreDisplay.textContent=0;
+    computerScoreDisplay.textContent= 0;
+    resultDisplay.innerHTML = '';
+    
+    
 }
 
 // event listener for the reset game button
